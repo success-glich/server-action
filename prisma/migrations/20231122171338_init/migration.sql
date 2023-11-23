@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Thought" (
+    "id" SERIAL NOT NULL,
+    "title" VARCHAR(250) NOT NULL,
+    "thought" VARCHAR(1000) NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Thought_pkey" PRIMARY KEY ("id")
+);
